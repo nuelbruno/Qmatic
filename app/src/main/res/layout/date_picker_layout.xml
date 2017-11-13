@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/btnSelectDate"
+            android:text="Done"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_bg"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false"
+            android:layout_height="30dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/btnCancelDateSelection"
+            android:layout_alignParentLeft="true"
+            android:text="Cancel"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_red_cancel_button"
+            android:textAllCaps="false"
+            android:layout_height="30dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/btnCancelDateSelection"
+            android:background="@android:color/black"
+            android:layout_height="0.5dp"/>
+
+        <CalendarView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:id="@+id/dtpkr"
+            android:weekSeparatorLineColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/btnSelectDate"
+            android:weekDayTextAppearance="@android:color/holo_red_dark"
+            android:weekNumberColor="@android:color/background_light"
+            android:splitMotionEvents="true"
+            android:showWeekNumber="true"
+            android:selectedWeekBackgroundColor="@android:color/transparent"
+            android:layout_height="match_parent">
+        </CalendarView>
+
+        <!--<DatePicker
+            android:layout_width="match_parent"
+            android:background="@android:color/holo_blue_light"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/btnSelectDate"
+            android:yearListSelectorColor="@android:color/holo_blue_light"
+            android:layout_centerHorizontal="true"
+            android:datePickerMode="calendar"
+            android:layout_height="match_parent"/>-->
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

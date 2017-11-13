@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#A6BC51</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#A6BC51</color>
+
+    <color name="buttonfirstColor">#A6BC51</color>
+    <color name="buttonsecondColor">#639CBF</color>
+    <color name="buttonthirdColor">#c37763</color>
+    <color name="buttonfourthColor">#B5575B</color>
+    <color name="buttonfifthColor">#DCA54F</color>
+    <color name="textHintColor">#97999a</color>
+
+</resources>

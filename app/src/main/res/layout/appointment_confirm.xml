@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent">
+            <!--<ImageView
+                android:layout_width="32dp"
+                android:background="@android:color/background_dark"
+                android:layout_alignParentRight="true"
+                android:layout_height="32dp" />-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/green_rounded"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Visit Visa Application"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/white_bg_flat_border"
+                android:weightSum="2"
+                android:layout_height="60dp">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:id="@+id/imgIconCal"
+                            android:background="@android:color/holo_blue_light"
+                            android:layout_height="28dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Your Appointment Date"
+                            android:textColor="@android:color/black"
+                            android:layout_marginLeft="8dp"
+                            android:id="@+id/txtviewAppointmentLabel"
+                            android:layout_toRightOf="@+id/imgIconCal"
+                            android:textSize="8sp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/DateView"
+                            android:layout_width="wrap_content"
+                            android:text="02 Aug 2016"
+                            android:layout_marginLeft="8dp"
+                            android:textColor="@android:color/black"
+                            android:layout_below="@+id/txtviewAppointmentLabel"
+                            android:layout_toRightOf="@+id/imgIconCal"
+                            android:textSize="15sp"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <View
+                    android:layout_width="0.5dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_height="match_parent"/>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="1dp"
+                    android:background="@android:color/white"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:id="@+id/imgIconclock"
+                            android:background="@android:color/holo_green_dark"
+                            android:layout_height="28dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Your Appointment Time"
+                            android:textColor="@android:color/black"
+                            android:layout_marginLeft="8dp"
+                            android:id="@+id/txtviewAppointmentTimeLabel"
+                            android:layout_toRightOf="@+id/imgIconclock"
+                            android:textSize="8sp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/TimeView"
+                            android:layout_width="wrap_content"
+                            android:text="11:00 AM"
+                            android:layout_marginLeft="8dp"
+                            android:textColor="@android:color/black"
+                            android:layout_below="@+id/txtviewAppointmentTimeLabel"
+                            android:layout_toRightOf="@+id/imgIconclock"
+                            android:textSize="15sp"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="@android:color/darker_gray"
+                android:layout_height="0.5dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@android:color/white"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Emirates"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txtviewEmirate"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="8sp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/EmiratesNameView"
+                    android:layout_width="wrap_content"
+                    android:text="Dubai"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:layout_below="@+id/txtviewEmirate"
+                    android:textSize="13sp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="@android:color/darker_gray"
+                android:layout_height="0.5dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@android:color/white"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Branch"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txtviewBranch"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="8sp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/BranchNameView"
+                    android:layout_width="wrap_content"
+                    android:text="Dubai Branch"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:layout_below="@+id/txtviewBranch"
+                    android:textSize="13sp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="@android:color/darker_gray"
+                android:layout_height="0.5dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@android:color/white"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Service"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txtviewService"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="8sp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/ServiceNameView"
+                    android:layout_width="wrap_content"
+                    android:text="Visit Visa Application"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:layout_below="@+id/txtviewService"
+                    android:textSize="13sp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="@android:color/darker_gray"
+                android:layout_height="0.5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+                android:layout_height="200dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Contact Info"
+                    android:textSize="13sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:textColor="@android:color/secondary_text_dark"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="5"
+                    android:layout_below="@+id/txtviewContactInfoLabel"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:orientation="horizontal"
+                    android:layout_height="40dp">
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="+971"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/rounded_white_edittext"
+                        android:layout_height="match_parent" />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal"
+                        android:paddingLeft="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:hint="Select"
+                        android:background="@drawable/rounded_white_edittext"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:weightSum="2"
+                android:layout_height="40dp">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Previous"
+                    android:id="@+id/btnPrevious"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/buttonblur_rounded"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Book"
+                    android:id="@+id/btnBook"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/button_bg"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/close"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_marginRight="0dp"
+         />
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">Qmatic App</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+
+    <string name="username">Username :</string>
+
+    <string name="useremail">Email :</string>
+    <string name="password">Password :</string>
+    <string name="signin">Sign in</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="forgotPassword_submit">Submit</string>
+    <string name="register">Register</string>
+    <string name="reservation">Reservation</string>
+    <string name="myRemoteBooking">My Remote Bookings</string>
+    <string name="myApponitment">My Appointment</string>
+    <string name="remainingtime">Remaining Time</string>
+    <string name="locateBranch">Locate Branch</string>
+    <string name="remoteBooking">Remote Booking</string>
+    <string name="bookAppointment">Book Appointment</string>
+    <string name="app_setting">Settings</string>
+
+    <string name="emirates">Emirates:</string>
+    <string name="branch">Branch:</string>
+    <string name="service">Service:</string>
+    <string name="appointmentDate">Appointment Date:</string>
+    <string name="appointmentTime">Appointment Time:</string>
+    <string name="select">Select</string>
+
+    <string name="mostRecentBooking">Most Recent Booking</string>
+    <string name="mostRecentAppointment">Most Recent Appointment</string>
+
+    <string-array name="emiratesList">
+        <item>@string/abudhabi</item>
+        <item>@string/ajman</item>
+        <item>@string/dubai</item>
+        <item>@string/fujairah</item>
+        <item>@string/rasalkhaimah</item>
+        <item>@string/sharjah</item>
+        <item>@string/ummalquwain</item>
+    </string-array>
+
+    <string-array name="expectedTimeList">
+        <item>@string/select5min</item>
+        <item>@string/select10min</item>
+        <item>@string/select15min</item>
+        <item>@string/select20min</item>
+    </string-array>
+
+    <string name="select5min">5 min</string>
+    <string name="select10min">10 min</string>
+    <string name="select15min">15 min</string>
+    <string name="select20min">20 min</string>
+
+    <string name="abudhabi">Abu Dhabi</string>
+    <string name="dubai">Dubai</string>
+    <string name="ajman">Ajman</string>
+    <string name="sharjah">Sharjah</string>
+    <string name="fujairah">Fujairah</string>
+    <string name="ummalquwain">Umm Al Quwain </string>
+    <string name="rasalkhaimah">Ras Al Khaimah</string>
+
+    <string name="branches">Branches</string>
+
+    <string name="selectTime">Expected Arrival Time</string>
+
+    <string name="selectBranch">Select Branch</string>
+
+    <string name="selectService">Select Service</string>
+    <string name="selectDate">Please select date</string>
+
+    <string name="show_all_service"><u>Show All Services +</u></string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBxKUqoJgXcWR3BB88uB3h3AomFQj3ogCg</string>
+
+    <string name="first_name">First Name:</string>
+    <string name="lasst_name">Last Name:</string>
+    <string name="email">Email:</string>
+    <string name="confirm_password">Confirm Password:</string>
+    <string name="mobile_no">Mobile No:</string>
+    <string name="cardno">Card No:</string>
+
+    <string name="err_firstname_msg">Please enter your First name.</string>
+    <string name="err_lasstname_msg">Please enter your Last name.</string>
+    <string name="err_email_msg">Please enter your Email address.</string>
+
+    <string name="err_password_msg">Please enter your Password.</string>
+    <string name="err_confirm_msg">Please enter your Confirm Password.</string>
+    <string name="err_pass_match_msg">Password and Confirm Password must be same.</string>
+    <string name="err_mobileno_msg">Please give your Mobile Number.</string>
+    <string name="err_card_no">Please enter your Card Number.</string>
+    <string name="err_invalid_mobileno">Please enter your ten digit Mobile Number.</string>
+    <string name="err_invalid_email">Please enter a valid Email address.</string>
+    <string name="webservice_error">The Service is temporary unavilable, please try it later.</string>
+    <string name="err_internet">Please connect to internet first.</string>
+    <string name="service_success">sucess</string>
+
+    <string name="selectservice">Please select service</string>
+    <string name="selectBranchs">Please select branch</string>
+    <string name="selectexopectedtime">Please select expected Arrival time</string>
+    <string name="deletsuccessfully">Deleted Successfully</string>
+    <string name="noServicesFound">No available service found</string>
+    <string name="noBranchesFound">No available Branches Found for this service</string>
+    <string name="nodatesFound">No available dates found</string>
+    <string name="notimesfound">No available times found</string>
+    <string name="servicenotavailble">Service is currently unavailable</string>
+    <string name="selectavailabletime">Please select available time</string>
+    <string name="selectavailabledate">Please select available date</string>
+
+
+</resources>

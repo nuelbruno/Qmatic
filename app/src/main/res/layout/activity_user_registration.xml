@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ae.qmatic.tacme.activity.UserRegistration">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include android:id="@+id/toolbar" layout="@layout/toolbar" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin"
+        android:background="@android:color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:text="@string/first_name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textsize_medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/buttonshape"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edtTextFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:singleLine="true"
+                        android:gravity="center|left"
+                        android:hint="First Name"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:textStyle="normal"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/textHintColor"
+                        android:textSize="@dimen/textsize_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtviewErrorfirstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:text="@string/err_firstname_msg"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="@dimen/error_text_message_size"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:text="@string/lasst_name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textsize_medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/buttonshape"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edtTextLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:singleLine="true"
+                        android:gravity="center|left"
+                        android:hint="Last Name"
+                        android:textStyle="normal"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/textHintColor"
+                        android:textSize="@dimen/textsize_medium" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtviewErrorLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:text="@string/err_lasstname_msg"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="@dimen/error_text_message_size"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:text="@string/email"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textsize_medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/buttonshape"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edtTextEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:singleLine="true"
+                        android:gravity="center|left"
+                        android:hint="Email"
+                        android:textStyle="normal"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/textHintColor"
+                        android:textSize="@dimen/textsize_medium" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtviewErrorEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:text="@string/err_email_msg"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="@dimen/error_text_message_size"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:text="@string/mobile_no"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textsize_medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/buttonshape"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edtTextMobileNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:singleLine="true"
+                        android:gravity="center|left"
+                        android:hint="Mobile Number"
+                        android:maxLength="10"
+                        android:inputType="number"
+                        android:textStyle="normal"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/textHintColor"
+                        android:textSize="@dimen/textsize_medium" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtviewErrorMobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:text="@string/err_mobileno_msg"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="@dimen/error_text_message_size"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:text="@string/password"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textsize_medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/buttonshape"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edtTextPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:singleLine="true"
+                        android:gravity="center|left"
+                        android:hint="Password"
+                        android:textStyle="normal"
+                        android:inputType="textPassword"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/textHintColor"
+                        android:textSize="@dimen/textsize_medium" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtviewErrorPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:text="@string/err_password_msg"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="@dimen/error_text_message_size"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:text="@string/confirm_password"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textsize_medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/buttonshape"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edtTextConfirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:singleLine="true"
+                        android:gravity="center|left"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword"
+                        android:textStyle="normal"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/textHintColor"
+                        android:textSize="@dimen/textsize_medium" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtviewErrorConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:text="@string/err_confirm_msg"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="@dimen/error_text_message_size"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:text="@string/cardno"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textsize_medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/buttonshape"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edtTextCardNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:singleLine="true"
+                        android:gravity="center|left"
+                        android:digits="1234567890"
+                        android:inputType="number"
+                        android:hint="Card Number"
+                        android:textStyle="normal"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/textHintColor"
+                        android:textSize="@dimen/textsize_medium" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtviewErrorCardNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:text="@string/err_card_no"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="@dimen/error_text_message_size"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_bg"
+                    android:text="Register"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:layout_height="100dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_height="80dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Emirates NBD Jumeria Branch Near Business Bay "
+                android:textSize="14sp"
+                android:id="@+id/txtViewBranchName"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="St.Al wasl Road 13 Dubai 7.5km, United Arab Emirates"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtViewBranchName"
+                android:id="@+id/txtViewBranchAddress"
+                android:textColor="@android:color/darker_gray"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="80dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:id="@+id/imgDirection"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_branch_navigation"
+                android:layout_height="25dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="DIRECTION"
+                android:textSize="10sp"
+                android:layout_below="@+id/imgDirection"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:id="@+id/txtViewDirectionlabel"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content" />
+            </RelativeLayout>
+        <View
+            android:layout_width="1dp"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/viewSep1"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="80dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:id="@+id/imgCall"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_branch_call"
+                android:layout_height="25dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="CALL"
+                android:textSize="10sp"
+                android:layout_below="@+id/imgCall"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:id="@+id/txtViewcallabel"
+                android:textColor="@android:color/background_dark"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

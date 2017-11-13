@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:background="@drawable/white_bg_flat_border"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtViewBranchName"
+                android:layout_width="match_parent"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp"
+                android:text="Visit Vista"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_height="1px"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_height="1px"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:src="@drawable/ic_branch_status"
+                android:id="@+id/imgStatus"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/icon_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Appointment Status:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="@dimen/textsize_medium"
+                android:id="@+id/txtviewStatuslabel"
+                android:layout_toEndOf="@+id/imgStatus"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:gravity="center|start"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=""
+                android:id="@+id/txtviewBranchStatus"
+                android:textColor="@android:color/holo_green_light"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/txtviewStatuslabel"
+                android:textSize="@dimen/textsize_medium"
+                android:gravity="center"
+                android:textStyle="normal"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_height="1px"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:src="@drawable/ic_branch_working_days"
+                android:id="@+id/imgCal"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/icon_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Appointment No:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="@dimen/textsize_medium"
+                android:id="@+id/txtviewWorkingDayslabel"
+                android:layout_toEndOf="@+id/imgCal"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:gravity="center|start"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=""
+                android:id="@+id/txtviewBranchWorkingDays"
+                android:textColor="@android:color/darker_gray"
+                android:layout_toEndOf="@+id/txtviewWorkingDayslabel"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:textSize="@dimen/textsize_medium"
+                android:textStyle="normal"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_height="1px"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:src="@drawable/ic_branch_timing"
+                android:id="@+id/imgtime"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/icon_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Appointment Time:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="@dimen/textsize_medium"
+                android:id="@+id/txtviewWorkingTimelabel"
+                android:layout_toEndOf="@+id/imgtime"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:gravity="center|start"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=""
+                android:id="@+id/txtviewBranchWorkingTime"
+                android:textColor="@android:color/darker_gray"
+                android:layout_toEndOf="@+id/txtviewWorkingTimelabel"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:textSize="@dimen/textsize_medium"
+                android:textStyle="normal"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_height="1px"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:src="@drawable/ic_branch_available_services"
+                android:id="@+id/imgAvialService"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/icon_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Avialble Services:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="@dimen/textsize_medium"
+                android:id="@+id/txtviewAvailServicelabel"
+                android:layout_toEndOf="@+id/imgAvialService"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:gravity="center|start"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:textAllCaps="false"
+            android:text="Cancel This Appointment"
+            android:textSize="14sp"
+            android:id="@+id/btnCacelAppointment"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/rounded_red_cancel_button"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

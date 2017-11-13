@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+
+    android:layout_margin="@dimen/margin"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:layout_marginRight="@dimen/activity_horizontal_margin"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:text="@string/emirates"-->
+                <!--android:visibility="gone"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textSize="@dimen/textsize_medium" />-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/selectEmiratesDropDown"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
+                <!--android:layout_marginRight="@dimen/activity_horizontal_margin"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:background="@drawable/buttonshape"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/selectedEmiratesTextView"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center|left"-->
+                    <!--android:hint="@string/select"-->
+                    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:textColor="@android:color/black"-->
+                    <!--android:textColorHint="@color/textHintColor"-->
+                    <!--android:textSize="@dimen/textsize_medium" />-->
+
+                <!--<ImageView-->
+
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_marginRight="@dimen/activity_horizontal_margin"-->
+                    <!--android:background="@drawable/down_arrow" />-->
+            <!--</LinearLayout>-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:textSize="9sp"-->
+                <!--android:text="Please select Emirates."-->
+                <!--android:id="@+id/txtviewErrorEmiratesSelection"-->
+                <!--android:visibility="gone"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_marginStart="@dimen/activity_horizontal_margin"-->
+                <!--android:layout_marginEnd="@dimen/activity_horizontal_margin"-->
+                <!--android:textColor="@android:color/holo_red_dark"-->
+                <!--android:layout_height="wrap_content" />-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="15dp"
+                android:text="@string/service"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textsize_medium" />
+
+            <LinearLayout
+                android:id="@+id/selectServiceDropDown"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/buttonshape"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/selectedServiceTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:hint="@string/select"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/textHintColor"
+                    android:textSize="@dimen/textsize_medium" />
+
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/down_arrow" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="9sp"
+                android:text="Please select Service."
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:id="@+id/txtviewErrorServiceSelection"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="15dp"
+                android:text="@string/branch"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textsize_medium" />
+
+            <LinearLayout
+                android:id="@+id/selectBranchDropDown"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/buttonshape"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/selectedBranchTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:hint="@string/select"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/textHintColor"
+                    android:textSize="@dimen/textsize_medium" />
+
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/down_arrow" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="9sp"
+                android:text="Please select Branch."
+                android:id="@+id/txtviewErrorBranchSelection"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="15dp"
+                android:text="Expected Arrival Time :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textsize_medium" />
+            <LinearLayout
+                android:id="@+id/selectAvilableDatesDropDown"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/buttonshape"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/selectedAvilableDatedTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:hint="@string/select"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/textHintColor"
+                    android:textSize="@dimen/textsize_medium" />
+
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/down_arrow" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="9sp"
+                android:text="Please select time."
+                android:id="@+id/txtviewErrorDateSelection"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/button_bg"
+                android:text="Next"
+                android:layout_marginTop="40dp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+</LinearLayout>

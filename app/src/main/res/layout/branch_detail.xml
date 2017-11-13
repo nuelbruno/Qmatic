@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/white_bg_flat_border"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtViewBranchName"
+                android:layout_width="match_parent"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp"
+                android:text="NA"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/txtviewBranchAddress"
+                android:layout_marginTop="5dp"
+                android:text="NA"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#F5F5F5"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Contact Number:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="@dimen/textsize_medium"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/txtviewBranchCallNo"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:textStyle="bold"
+                android:gravity="center|start"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="+971 123456789"
+                android:id="@+id/txtviewBranchCallNo"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_marginEnd="40dp"
+                android:gravity="center"
+                android:textSize="@dimen/textsize_medium"
+                android:layout_alignParentEnd="true"
+                android:textStyle="normal"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:src="@drawable/ic_branch_call"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_height="25dp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_height="1px"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:src="@drawable/ic_branch_status"
+                android:id="@+id/imgStatus"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/icon_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Status:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="@dimen/textsize_medium"
+                android:id="@+id/txtviewStatuslabel"
+                android:layout_toEndOf="@+id/imgStatus"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:gravity="center|start"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=""
+                android:id="@+id/txtviewBranchStatus"
+                android:textColor="@android:color/holo_green_light"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/txtviewStatuslabel"
+                android:textSize="@dimen/textsize_medium"
+                android:gravity="center"
+                android:textStyle="normal"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_height="1px"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:src="@drawable/ic_branch_working_days"
+                android:id="@+id/imgCal"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/icon_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Working Days:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="@dimen/textsize_medium"
+                android:id="@+id/txtviewWorkingDayslabel"
+                android:layout_toEndOf="@+id/imgCal"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:gravity="center|start"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=""
+                android:id="@+id/txtviewBranchWorkingDays"
+                android:textColor="@android:color/darker_gray"
+                android:layout_toEndOf="@+id/txtviewWorkingDayslabel"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:textSize="@dimen/textsize_medium"
+                android:textStyle="normal"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_height="1px"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:src="@drawable/ic_branch_timing"
+                android:id="@+id/imgtime"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/icon_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Working Time:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="@dimen/textsize_medium"
+                android:id="@+id/txtviewWorkingTimelabel"
+                android:layout_toEndOf="@+id/imgtime"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:gravity="center|start"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=""
+                android:id="@+id/txtviewBranchWorkingTime"
+                android:textColor="@android:color/darker_gray"
+                android:layout_toEndOf="@+id/txtviewWorkingTimelabel"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:textSize="@dimen/textsize_medium"
+                android:textStyle="normal"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_height="1px"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:src="@drawable/ic_branch_available_services"
+                android:id="@+id/imgAvialService"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/icon_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Avialble Services:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="@dimen/textsize_medium"
+                android:id="@+id/txtviewAvailServicelabel"
+                android:layout_toEndOf="@+id/imgAvialService"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:gravity="center|start"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:scrollbars="none"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_height="100dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/lLayoutLeft"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:text="Service Title #1"
+                        android:layout_height="wrap_content" />-->
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/lLayoutRight"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:text="Service Title #1"
+                        android:layout_height="wrap_content" />-->
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Service Title #1"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Service Title #2"
+                android:layout_height="match_parent" />
+        </LinearLayout>-->
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="5dp"
+            android:layout_height="1px">
+            <View
+                android:layout_width="0dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/darker_gray"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/darker_gray"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Service Title #3"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Service Title #4"
+                android:layout_height="match_parent" />
+        </LinearLayout>-->
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:text="@string/show_all_service"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_height="wrap_content" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:weightSum="2"
+            android:layout_height="45dp">
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Remote Booking"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:id="@+id/btnRemoteBooking"
+                android:textColor="@android:color/white"
+                android:background="@drawable/buttonblur_rounded"
+                android:layout_height="match_parent" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="Book an\nAppointment"
+                android:textSize="14sp"
+                android:id="@+id/btnBookAnAppointment"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_bg"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+</LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/white_bg_flat_border"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:layout_height="65dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Navigation: "
+                    android:id="@+id/lbl1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="7.5 Km Away"
+                    android:id="@+id/lbl2"
+                    android:layout_toRightOf="@+id/lbl1"
+                    android:layout_toStartOf="@+id/imgnav"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="left|center"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:src="@drawable/ic_branch_navigation"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/imgnav"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="@dimen/icon_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>

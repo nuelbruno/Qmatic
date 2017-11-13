@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="Remaining Time"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/buttonfirstColor"
+                android:textStyle="bold"
+                android:textSize="@dimen/textsize_medium" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+
+                android:layout_gravity="center|right"
+                android:scaleType="fitXY"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_timer_active" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#BDBDBD">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center"
+                    android:paddingRight="1dp"
+                    android:paddingLeft="1dp"
+                    android:layout_alignParentTop="true">
+
+                    <TextView
+                        android:id="@+id/timeHourFirstDigit"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:background="@drawable/buttonshape"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/timeTextsize"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/timeHourSecondDigit"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:background="@drawable/buttonshape"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/timeTextsize"
+
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/buttonshape"
+                    android:gravity="center"
+                    android:text="Hours"
+                    android:textColor="@android:color/black"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="#BDBDBD">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center"
+                    android:paddingRight="1dp"
+                    android:paddingLeft="1dp"
+                    android:layout_alignParentTop="true">
+
+                    <TextView
+                        android:id="@+id/timeMinFirstDigit"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:background="@drawable/buttonshape"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/timeTextsize"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/timeMinSecondDigit"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:background="@drawable/buttonshape"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/timeTextsize"
+
+                        />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textViuew3"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/buttonshape"
+                    android:gravity="center"
+                    android:text="Minutes"
+                    android:textColor="@android:color/black"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#BDBDBD">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center"
+                    android:paddingRight="1dp"
+                    android:paddingLeft="1dp"
+                    android:layout_alignParentTop="true">
+
+                    <TextView
+                        android:id="@+id/timeSecondFirstDigit"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:background="@drawable/buttonshape"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/timeTextsize"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/timeSecondSecondDigit"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:background="@drawable/buttonshape"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="@dimen/timeTextsize"
+                        android:textColor="@android:color/black"
+                        />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textggView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/buttonshape"
+                    android:gravity="center"
+                    android:text="Seconds"
+                    android:textColor="@android:color/black"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
